@@ -1,13 +1,13 @@
 import tweepy
 import time
 
-auth = tweepy.OAuthHandler('UsQkrWHGmLNUu9PHEkDQn6OGV','MLkHGxZVNmdmmS1lXPgNgWJYPbdDbv2t9rZ0jKBdbFYaQeiRYt')
-auth.set_access_token('1352429613167730692-ZgplBGCoEUgF7fzhkGIqHxfISlz2BR','8LNVT3fBDHS65Ia8bq19sJ9WzHbCB9Iy5oVtJEpCFn2Ft')
+auth = tweepy.OAuthHandler('UsQkrWHGmLNUu9PHEttrt6OGV','MLkHGxZVNmdmmS1lXPgNgWJYPbdDbv2t9rZ0jKBdbFYaQeittttYt')
+auth.set_access_token('1352429613167730692-ZgplBGCoEUgF7fzhrtrqHxfISlz2BR','8LNVT3fBDHSrtrtrtsJ9WzHbCB9Iy5oVtJEpCFn2Ft')
 
 api = tweepy.API(auth)
-file_name = "last_seen_id.txt"
+file_name = "last_seen_id.txt" //File to store tweet IDs so we do not repeat through a tweet.
 
-def retrieve_last_seen_id(file_name):
+def retrieve_last_seen_id(file_name): 
     f_read = open(file_name, 'r')
     last_seen_id = str(f_read.read().strip())
     f_read.close()
